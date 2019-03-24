@@ -1,7 +1,8 @@
-# Hearten
+## This is the repository for the backend
+
+# Hearten 
 
 ### A creative writing journal app that provides visual and/or text prompts for journal entries.
-
 
 ## Release 0 - MVP
 - A user will be able to create/save and update/delete journal entries.
