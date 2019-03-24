@@ -23,8 +23,8 @@
 
 
 ## Release 3
-
-- A user can set a timer - for timed writing entries
+- Add timer component
+- A user can optionally set a timer for timed writing entries
 
 ## Release 4
 
