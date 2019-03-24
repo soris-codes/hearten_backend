@@ -1,0 +1,23 @@
+# Files to ignore
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+venv/
+
+# Dependency directories
+node_modules/
+
+# Coverage directory 
+coverage
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
