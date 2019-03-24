@@ -1,0 +1,1 @@
+web: gunicorn hearten_backend.wsgi
