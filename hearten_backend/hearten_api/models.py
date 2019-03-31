@@ -8,7 +8,6 @@ class Post(models.Model):
   title = models.CharField(max_length=200)
   body = models.TextField()
   imagePrompt = models.CharField(max_length=300, blank=True )
-  textPrompt = models.CharField(max_length=200, blank=True)
   created_on = models.DateTimeField(default=timezone.now)
 
   class Meta:

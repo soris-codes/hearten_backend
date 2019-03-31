@@ -4,8 +4,8 @@ from rest_framework import viewsets, permissions
 
 class PostViewSet(viewsets.ModelViewSet):
   permissions_classes = [
-    permissions.IsAuthenticated
-    # permissions.AllowAny
+    # permissions.IsAuthenticated
+    permissions.AllowAny
   ]
 
   serializer_class = PostSerializer
