@@ -1,6 +1,7 @@
-## This is the repository for the backend
 
-# Hearten 
+# Hearten
+
+This repo contains the back-end code. The front-end repo is [https://github.com/soris-codes/hearten_frontend]
 
 ### A creative writing journal app that provides visual and/or text prompts for journal entries.
 
@@ -13,22 +14,19 @@
 - A user can create an account and authenticate to create/save entries
 
 
-## Release 2
+## Future Releases
 - Add text prompt option
     * Create random text generator that provides a 3-word prompt
+    
 - A user is able to select the type of journal entry they are making:
     * no prompt
     * visual prompt
     * story starter text prompt
     * both image and story starter
-
-
-## Release 3
+    
 - Add timer component
-- A user can optionally set a timer for timed writing entries
-
-## Release 4
-
+    * A user can optionally set a timer for timed writing entries
+    
 - A user can share entries on social media platforms
 
 
