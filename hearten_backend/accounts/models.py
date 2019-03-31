@@ -1,3 +1,3 @@
 from django.db import models
 
-# Create your models here.
+# Only using built-in User model

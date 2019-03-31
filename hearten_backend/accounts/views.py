@@ -1,3 +1,3 @@
 from django.shortcuts import render
 
-# No views 
+# Views being set in api.py

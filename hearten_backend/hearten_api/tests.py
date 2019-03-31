@@ -4,9 +4,12 @@ from django.urls import reverse
 
 from knox.models import AuthToken
 from rest_framework.test import APITestCase
+from django.contrib.auth.models import User
+import json
 
 class PostListCreateAPIViewTestCase(APITestCase):
-    url = 'api/posts/'
+    # url = 'api/posts/'
+    url = reverse('posts-list')
 
     # Set up user and token
     def setUp(self):
@@ -18,7 +21,7 @@ class PostListCreateAPIViewTestCase(APITestCase):
         self.api_authentication()
 
     def api_authentication(self):
-        self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token.key)
+        self.client.credentials(HTTP_AUTHORIZATION='Token ' + self.token[1])
 
     def test_create_post(self):
         response = self.client.post(self.url, {
@@ -31,7 +34,7 @@ class PostListCreateAPIViewTestCase(APITestCase):
         """
         Test to verify user posts list
         """
-        Post.objects.create(user=self.user, title="Test post")
+        Post.objects.create(author=self.user, title="Test post", body="Another post")
         response = self.client.get(self.url)
         self.assertTrue(len(json.loads(response.content)) == Post.objects.count())
 

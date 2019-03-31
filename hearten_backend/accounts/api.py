@@ -16,7 +16,7 @@ class UserAPI(generics.RetrieveAPIView):
   def get_object(self):
     return self.request.user
 
-# When a user registers, a token is created 
+# When a user registers or logs in, a token is created and returned in the response from the server 
 class RegisterAPI(generics.GenericAPIView):
   serializer_class = RegisterSerializer
 
@@ -41,11 +41,4 @@ class LoginAPI(generics.GenericAPIView):
       "token": AuthToken.objects.create(user)[1]
     })
 
-class UserAPI(generics.RetrieveAPIView):
-  permission_classes = [
-    permissions.IsAuthenticated,
-  ]
-  serializer_class = UserSerializer
 
-  def get_object(self):
-    return self.request.user
