@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 
 django_heroku.settings(locals())
 
-# CORS_ORIGIN_WHITELIST = ('hearten-frontend//.herokuapp.com')
+CORS_ORIGIN_WHITELIST = ('hearten-frontend//.herokuapp.com')
 
 ### DEVELOPMENT SETTINGS 
-CORS_ORIGIN_WHITELIST = ('http://localhost:3000')
+# CORS_ORIGIN_WHITELIST = ('http://localhost:3000')
