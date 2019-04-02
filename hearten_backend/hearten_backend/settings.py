@@ -28,9 +28,18 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'hearten_api',
+    'accounts',
     'rest_framework',
+    'knox',
     'corsheaders',
 ]
+
+REST_FRAMEWORK = {
+    
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'knox.auth.TokenAuthentication',
+        ],
+}
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -93,7 +102,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -114,3 +122,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 django_heroku.settings(locals())
+
+CORS_ORIGIN_WHITELIST = ('hearten-frontend//.herokuapp.com')
+
+### DEVELOPMENT SETTINGS 
+# CORS_ORIGIN_WHITELIST = ('http://localhost:3000')
