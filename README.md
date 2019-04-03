@@ -14,6 +14,10 @@ This repo contains the back-end code. The front-end repo is [https://github.com/
 - A user can create an account and authenticate to create/save entries
 
 
+## Release 2
+- A user can click on a 10-minute interval timer for timed writing exercises
+
+
 ## Future Releases
 - Add text prompt option
     * Create random text generator that provides a 3-word prompt
@@ -23,9 +27,6 @@ This repo contains the back-end code. The front-end repo is [https://github.com/
     * visual prompt
     * story starter text prompt
     * both image and story starter
-    
-- Add timer component
-    * A user can optionally set a timer for timed writing entries
     
 - A user can share entries on social media platforms
 
